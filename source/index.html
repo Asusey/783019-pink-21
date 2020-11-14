@@ -1,12 +1,274 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="logo">
+        <img
+          class="logo__image logo__image--header"
+          src="https://via.placeholder.com/74x23"
+          width="74"
+          height="23"
+          alt="Логотип приложения Пинк"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Приложение "Пинк" - спасёт от серых будней
+      </h1>
 
+      <section class="load">
+        <div class="load__wrapper">
+          <p class="load__slogan">Взгляните на жизнь иначе!</p>
+          <a class="load__link" href="">Скачать приложение</a>
+          <ul class="load__list">
+            <li class="load__item"><a href="">Apple</a></li>
+            <li class="load__item"><a href="">Android</a></li>
+            <li class="load__item"><a href="">Windows</a></li>
+          </ul>
+          <p class="load-legend">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Преимущества приложения</h2>
+          <p class="situation">Устали от серости мегаполиса?</p>
+          <p class="decision">Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--world">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы о приложении</h2>
+          <div class="reviews__list slider__list">
+            <!--В проекте открыт пока только один отзыв-->
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles">
+            <button
+              class="slider__toggle slider__toggle--current"
+              type="button"
+            >
+              1
+            </button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="price__wrapper slider">
+          <table class="price__list slider__list">
+            <tr class="price__item slider__item ">
+              <th>&nbsp;</th>
+              <th>База</th>
+              <th class="slider__item--marker">Стандарт</th>
+              <th>Анлим</th>
+            </tr>
+            <tr class="price__item slider__item">
+              <th>&nbsp;</th>
+              <th>1,99 USD</th>
+              <th>3,99 USD</th>
+              <th>9,99 USD</th>
+            </tr>
+            <tr class="price__item slider__item">
+              <td>Розовый фильтр</td>
+            </tr>
+            <tr class="price__item slider__item">
+              <td>Смайлики</td>
+            </tr>
+            <tr class="price__item slider__item">
+              <td>Комментарии</td>
+            </tr>
+          </table>
+          <p class="reviews__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button
+              class="slider__toggle slider__toggle--current"
+              type="button"
+            >
+              2
+            </button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <p class="situation">Остались вопросы?</p>
+          <p class="decision">Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__title">
+                Звоните:
+                <a class="contacts__link" href="tel:+78125556666"
+                  >+7 (812) 555-66-66</a
+                >
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">
+                Пишите:
+                <a class="contacts__link" href="">mail@htmlacademy.ru</a>
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">
+                Приезжайте в гости:
+                <a class="contacts__link" href=""
+                  >ул. Большая Конюшенная, 19/8</a
+                >
+              </p>
+            </li>
+          </ul>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            width="320"
+            height="200"
+            frameborder="0"
+            allowfullscreen
+            title="Наш офис по адресу: Большая конюшенная улица, дом 19, Санкт-Петербург"
+          ></iframe>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo logo">
+            <a class="logo__link">
+              <img
+                class="logo__image logo__image--footer"
+                src="https://via.placeholder.com/74x23"
+                width="74"
+                height="23"
+                alt="Логотип приложения Пинк"
+              />
+            </a>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  class="social__link social__link--vkontakte"
+                  href="https://vk.com/htmlacademy"
+                  >Вконтакте</a
+                >
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link--facebook"
+                  href="https://www.facebook.com/htmlacademy"
+                  >Фейсбук</a
+                >
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__link--instagram"
+                  href="https://www.instagram.com/htmlacademy"
+                  >Инстаграм</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+              >Разработано<svg
+                width="27"
+                height="34"
+                class="copyright__image"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 60 60"
+              >
+                <path
+                  fill="#D22856"
+                  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
