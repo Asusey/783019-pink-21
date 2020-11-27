@@ -1,0 +1,37 @@
+.price {
+  background-color: $secondary-background-color;
+  outline: 5px solid paleturquoise;
+  outline-offset: -5px;
+}
+
+.price__wrapper {
+  padding-bottom: 90px;
+}
+
+.price__title {
+  background-color: $primary-text-color;
+  color: $white;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.price__title--empty {
+  background-color: $secondary-background-color;
+}
+
+.price__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.price__field {
+  color: $primary-text-color;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}

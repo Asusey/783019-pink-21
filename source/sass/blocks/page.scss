@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: $font-stack;
+  line-height: 24px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: $primary-text-color;
+}
+
+.page-footer__logo {
+  padding-top: 52px;
+}

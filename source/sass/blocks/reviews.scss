@@ -1,0 +1,27 @@
+.reviews {
+  outline: 5px solid purple;
+  outline-offset: -5px;
+}
+
+.reviews__wrapper {
+  padding-top: 42px;
+  padding-bottom: 195px;
+}
+
+.reviews__author-name {
+  color: $black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.reviews__item {
+  margin: 0;
+}
