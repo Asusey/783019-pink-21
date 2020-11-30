@@ -1,0 +1,38 @@
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 332px;
+  margin: 0;
+  background-color: $secondary-background-color;
+}
+
+.advantages__subtitle {
+  color: $black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 23px;
+}
+
+.advantages__description {
+  color: $primary-text-color;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.advantages__title {
+  margin: 0;
+}
+
+.advantages__title:nth-of-type(1) {
+  padding-top: 39px;
+  padding-bottom: 29px;
+}
+
+.advantages__title:nth-of-type(2) {
+  padding-bottom: 95px;
+}
