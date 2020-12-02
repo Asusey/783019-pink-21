@@ -63,7 +63,6 @@
 }
 
 .form__label-checkbox {
-  color: $primary-text-color;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
@@ -91,7 +90,6 @@
 }
 
 .form__label-radio {
-  color: $primary-text-color;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
@@ -123,6 +121,14 @@
   padding-left: 20px;
   width: 296px;
   resize: none;
+}
+
+.form__textarea::-webkit-input-placeholder {
+  color: $primary-text-color;
+  font-family: $font-stack;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .form__button-submit {
