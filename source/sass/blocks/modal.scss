@@ -1,0 +1,33 @@
+.modal {
+  display: none;
+}
+
+.modal__title {
+  color: $primary-text-color;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.modal__text {
+  color: $primary-text-color;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal__button {
+  color: $white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: $green;
+  border: 2px solid $green;
+  border-radius: 1px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-top: 40px;
+  margin-bottom: 54px;
+}
