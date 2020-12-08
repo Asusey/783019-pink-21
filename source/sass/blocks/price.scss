@@ -1,9 +1,16 @@
 .price {
   background-color: $secondary-background-color;
+  overflow: hidden;
 }
 
 .price__wrapper {
   padding-bottom: 90px;
+  margin: auto;
+}
+
+.price__list {
+  width: 840px;
+  margin: auto;
 }
 
 .price__title {

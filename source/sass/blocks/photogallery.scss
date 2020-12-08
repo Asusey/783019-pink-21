@@ -1,6 +1,7 @@
 .photogallery__title {
   padding-top: 36px;
   padding-bottom: 84px;
+  margin: 0;
   background-color: $load-background-color;
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -9,4 +10,5 @@
 .photogallery__intro {
   padding-top: 54px;
   padding-bottom: 60px;
+  margin: 0;
 }
