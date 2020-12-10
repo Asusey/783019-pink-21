@@ -1,6 +1,9 @@
 .price {
   background-color: $secondary-background-color;
-  overflow: hidden;
+
+  @media (max-width: $mobile-width-only) {
+    overflow: hidden;
+  }
 }
 
 .price__wrapper {
@@ -9,8 +12,16 @@
 }
 
 .price__list {
-  width: 840px;
+  width: 832px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .price__title {
