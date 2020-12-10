@@ -1,9 +1,27 @@
 .price {
   background-color: $secondary-background-color;
+
+  @media (max-width: $mobile-width-only) {
+    overflow: hidden;
+  }
 }
 
 .price__wrapper {
   padding-bottom: 90px;
+  margin: auto;
+}
+
+.price__list {
+  width: 832px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .price__title {

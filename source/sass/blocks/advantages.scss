@@ -1,9 +1,38 @@
+.advantages {
+  background-color: $secondary-background-color;
+}
+
+.advantages__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .advantages__list {
   list-style: none;
   padding: 0;
   padding-bottom: 332px;
   margin: 0;
-  background-color: $secondary-background-color;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .advantages__subtitle {
@@ -13,6 +42,7 @@
   line-height: 24px;
   margin: 0;
   padding-top: 23px;
+  text-align: center;
 }
 
 .advantages__description {
@@ -21,17 +51,77 @@
   line-height: 24px;
   margin: 0;
   padding-top: 25px;
+  text-align: center;
 }
 
 .advantages__title {
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 /3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+  }
 }
 
 .advantages__title:nth-of-type(1) {
   padding-top: 39px;
   padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title:nth-of-type(2) {
   padding-bottom: 95px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 440px;
+    margin: auto;
+  }
+}
+
+.advantages__subtitle-special {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.advantages__description-special {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.advantages__item-special {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    width: 520px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

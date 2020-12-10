@@ -1,7 +1,25 @@
 .load {
   background-color: $load-background-color;
-  background-image: url("../../img/back-mobile.jpg");
+  /*background-image: url("../../img/back-mobile.jpg");*/
   background-repeat: no-repeat;
+}
+
+.load__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
 }
 
 .load__slogan {
@@ -11,6 +29,7 @@
   font-size: 24px;
   line-height: 29px;
   margin: 0;
+  text-align: center;
 }
 
 .load__link {
@@ -19,6 +38,21 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  border: 3px solid $white;
+  border-radius: 29px;
+  width: 274px;
+  display: flex;
+  justify-content: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 294px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 294px;
+  }
 }
 
 .load__legend {
@@ -27,11 +61,27 @@
   line-height: 24px;
   margin: 0;
   padding-bottom: 38px;
+  width: 300px;
 }
 
 .load__list {
   display: flex;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
+  padding-top: 32px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 46px;
+  }
+}
+
+.load__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

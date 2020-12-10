@@ -1,8 +1,10 @@
-.logo__icon {
+.logo__image {
+  display: block;
   width: 74px;
   height: 23px;
 }
 
-.logo__image--footer path {
-  fill: $black;
+.logo__image--footer {
+  width: 145px;
+  height: 40px;
 }
