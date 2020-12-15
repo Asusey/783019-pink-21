@@ -1,7 +1,8 @@
 .load {
   background-color: $load-background-color;
-  /*background-image: url("../../img/back-mobile.jpg");*/
+  background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: 0% -34%;
 }
 
 .load__wrapper {

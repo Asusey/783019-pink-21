@@ -84,7 +84,7 @@
             <fieldset class="form__field form__field--login">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__label" for="surname">Фамилия:</label>
+                  <label class="form__label form__label--login" for="surname">Фамилия:</label>
                   <input
                     class="form__input"
                     type="text"
@@ -95,7 +95,7 @@
                   />
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="name">Имя:</label>
+                  <label class="form__label form__label--login" for="name">Имя:</label>
                   <input
                     class="form__input"
                     type="text"
@@ -106,7 +106,7 @@
                   />
                 </li>
                 <li class="form__item">
-                  <label class="form__label" for="middle-name">Отчество:</label>
+                  <label class="form__label form__label--login" for="middle-name">Отчество:</label>
                   <input
                     class="form__input"
                     type="text"
@@ -123,7 +123,7 @@
               <legend class="form__legend form__legent--checkbox">
                 Ваши безбашенные достижения в путешествии
               </legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--checkbox">
                 <li class="form__item form__item--checkbox">
                   <input
                     class="form__checkbox"
@@ -196,16 +196,16 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__field form__field--login">
+            <fieldset class="form__field form__fild--contacts">
               <legend class="form__legend form__legend--contacts">
                 Контактная информация
               </legend>
 
-              <ul class="form__list">
+              <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--contacts">
-                  <label class="form__label" for="phone">Номер телефона</label>
+                  <label class="form__label form__label--contacts" for="phone">Номер телефона</label>
                   <input
-                    class="form__input"
+                    class="form__input form__input--contacts"
                     type="text"
                     name="phone"
                     id="phone"
@@ -213,9 +213,9 @@
                   />
                 </li>
                 <li class="form__item form__item--contacts">
-                  <label class="form__label" for="email">Адрес почты</label>
+                  <label class="form__label form__label--contacts" for="email">Адрес почты</label>
                   <input
-                    class="form__input"
+                    class="form__input form__input--contacts"
                     type="text"
                     name="email"
                     id="email"
@@ -271,7 +271,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__field form__field--login form__field--text">
+            <fieldset class="form__field form__field--text">
               <legend class="form__legend form__legend--text">
                 Опишите свои эмоции
               </legend>
@@ -289,7 +289,7 @@
                 type="submit"
                 value="Отправить форму"
               />
-              <span class="form__annotation">* — обязательные поля</span>
+              <p class="form__annotation">* — обязательные&nbsp;<span class="form__annotation-add">для заполнения</span>&nbsp;поля</p>
             </div>
           </form>
         </div>

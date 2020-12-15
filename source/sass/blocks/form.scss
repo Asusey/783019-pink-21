@@ -3,11 +3,20 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
 }
 
 .form__field {
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  color: $primary-text-color;
 
   @media (max-width: $mobile-width-only) {
     border: none;
@@ -19,15 +28,9 @@
     border-radius: 1px;
     padding: 0;
   }
-}
 
-.form__field--login {
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    border: none;
-    min-width: 620px;
+  @media (min-width: $desktop-width) {
+    min-width: 936px;
   }
 }
 
@@ -50,19 +53,6 @@
   }
 }
 
-.form__item--contacts {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-
-.form__legend--contacts {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
 .form__label {
   color: $red;
   font-weight: normal;
@@ -70,11 +60,6 @@
   line-height: 30px;
   text-transform: uppercase;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 20px;
-    padding-top: 20px;
-  }
 }
 
 .form__input {
@@ -90,29 +75,51 @@
 }
 
 .form__input::-webkit-input-placeholder {
-  color: $primary-text-color;
+  font-style: normal;
+
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   width: 100%;
 }
 
+.form__field::-webkit-input-placeholder {
+  color: $primary-text-color;
+}
+
 .form__legend {
   padding: 0;
   color: $red;
   text-transform: uppercase;
-  text-align: center;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 23px;
     padding-right: 23px;
+    text-align: center;
   }
 }
 
-.form__legend--text {
-  background-color: $white;
-  padding-top: 42px;
-  padding-bottom: 22px;
+//Form-login
+
+.form__field--login {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 433px;
+    margin: 0;
+  }
+}
+
+.form__label--login {
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+    padding-top: 20px;
+  }
 }
 
 //Form-checkbox
@@ -130,6 +137,14 @@
   font-size: 18px;
   line-height: 30px;
   cursor: pointer;
+  color: $primary-text-color;
+}
+
+.form__list--checkbox {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .form__item--checkbox {
@@ -139,6 +154,36 @@
   @media (min-width: $tablet-width) {
     padding-left: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__item--checkbox:nth-of-type(1) {
+    order: 1;
+  }
+
+  .form__item--checkbox:nth-of-type(2) {
+    order: 4;
+  }
+
+  .form__item--checkbox:nth-of-type(3) {
+    order: 2;
+  }
+
+  .form__item--checkbox:nth-of-type(4) {
+    order: 5;
+  }
+
+  .form__item--checkbox:nth-of-type(5) {
+    order: 3;
+  }
+
+  .form__item--checkbox:nth-of-type(6) {
+    order: 6;
+  }
 }
 
 .form__field--checkbox {
@@ -147,6 +192,10 @@
     padding-top: 115px;
     display: block;
     background-color: $secondary-background-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 4;
   }
 }
 
@@ -160,6 +209,58 @@
     transform: translate(-50%, 0);
   }
 }
+
+//Form-contacts
+
+.form__fild--contacts {
+  @media (min-width: $tablet-width) {
+    border: 2px solid $light-gray;
+    border-radius: 1px;
+    order: 3;
+  }
+}
+
+.form__list--contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.form__item--contacts {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.form__legend--contacts {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.form__input--contacts {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 437px;
+    margin: 0 auto;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 365px;
+  }
+}
+
+.form__label--contacts {
+  @media (min-width: $tablet-width) {
+    padding-left: 77px;
+  }
+}
+
 //Form-radio
 
 .form__radio {
@@ -175,6 +276,7 @@
   font-size: 18px;
   line-height: 30px;
   cursor: pointer;
+  color: $primary-text-color;
 }
 
 .form__item--radio {
@@ -191,6 +293,16 @@
     position: relative;
     padding-top: 123px;
     background-color: $secondary-background-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 429px;
+    margin: 0;
+    margin-left: 74px;
   }
 }
 
@@ -240,13 +352,21 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $light-gray;
     border-radius: 1px;
+    order: 5;
   }
+}
+
+.form__legend--text {
+  background-color: $white;
+  padding-top: 42px;
+  padding-bottom: 22px;
 }
 
 //Button
 
 .form__submit {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
@@ -254,6 +374,12 @@
   @media (min-width: $tablet-width) {
     min-width: 620px;
     flex-direction: row;
+    justify-content: space-between;
+    order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 940px;
   }
 }
 
@@ -272,17 +398,43 @@
   margin: 52px auto 46px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 70px;
-    margin-right: 140px;
+    margin-right: 0;
     margin-left: 0;
   }
 }
 
-.feedback__annotation {
-  text-align: center;
+.form__annotation {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.form__annotation-add {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+  }
 }
