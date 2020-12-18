@@ -6,7 +6,16 @@
   background-color: $load-background-color;
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0% 30%;
+  background-position: 0% 23%;
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/back-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/back-desktop.jpg");
+  }
 }
 
 .feedback__title {

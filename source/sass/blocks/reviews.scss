@@ -1,3 +1,7 @@
+.reviews {
+  background-color: $white;
+}
+
 .reviews__wrapper {
   margin: auto;
   max-width: 280px;
@@ -17,6 +21,7 @@
   font-size: 18px;
   line-height: 30px;
   margin: 0;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -45,6 +50,7 @@
   font-size: 14px;
   line-height: 30px;
   margin: 0;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

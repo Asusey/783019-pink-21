@@ -1,11 +1,25 @@
-.form-upload {
+.form-upload__wrapper {
   background-color: $secondary-background-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .form-upload__image {
   display: block;
   margin: auto;
   padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .form-upload__list {
@@ -17,52 +31,84 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-upload__item {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
 }
 
 .form-upload__list::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: $primary-text-color;
-  opacity: 0.1;
-  top: 200px;
-  left: 0;
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $primary-text-color;
+    opacity: 0.1;
+    top: 200px;
+    left: 0;
+  }
 }
 
 .form-upload__tools {
   max-width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 //Form-upload__tools
-
-.form-upload__button--crop {
-  position: relative;
-}
 
 //Scale
 
 .form-upload__roller {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .form-upload__roller--active {
   display: block;
 }
 
-.form-upload__scale {
+//Crop
+
+.form-upload__button--crop {
+  position: relative;
+}
+
+.form-upload__scale--crop {
   position: absolute;
-  top: 98px;
-  left: 20px;
+  top: 96px;
+  left: 29px;
   height: 2px;
   width: 240px;
   background-color: $primary-text-color;
   margin: 0 auto;
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+    left: 121px;
+  }
 }
 
-.form-upload__toggle {
+.form-upload__toggle--crop {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -73,6 +119,69 @@
   border-radius: 50%;
 }
 
+//Fill
+
+.form-upload__button--fill {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.form-upload__scale--fill {
+  position: absolute;
+  top: 121px;
+  left: 121px;
+  height: 2px;
+  width: 240px;
+  background-color: $primary-text-color;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.form-upload__toggle--fill {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 50px;
+    top: -8px;
+    background: #ffffff;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+  }
+}
+
+//Contrast
+
+.form-upload__button--contrast {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.form-upload__scale--contrast {
+  position: absolute;
+  top: 184px;
+  left: 121px;
+  height: 2px;
+  width: 240px;
+  background-color: $primary-text-color;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.form-upload__toggle--contrast {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 50px;
+    top: -8px;
+    background: #ffffff;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+  }
+}
 //Buttons
 
 .form-upload__list-buttons {
@@ -81,6 +190,10 @@
   padding-top: 85px;
   padding-bottom: 41px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .form-upload__item-button {

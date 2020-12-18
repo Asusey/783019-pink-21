@@ -5,13 +5,12 @@
   color: $white;
 }
 
-@media (min-width: $desktop-width) {
-  .page-header__wrapper {
+.page-header__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 960px;
-
     margin: auto;
   }
 }
@@ -21,6 +20,7 @@
   padding-top: 23px;
   padding-left: 20px;
   padding-bottom: 21px;
+  border-bottom: 1px solid #000000;
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
