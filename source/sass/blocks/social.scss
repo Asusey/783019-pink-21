@@ -4,6 +4,24 @@
   margin: 0;
 }
 
+.social__item {
+  margin: 0 4px;
+}
+
 .social__link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
   border: 3px solid $border-social-color;
+  border-radius: 50px;
+}
+
+.social__link:hover {
+  border-color: $primary-text-color;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }

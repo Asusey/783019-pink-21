@@ -20,7 +20,7 @@
   padding-top: 23px;
   padding-left: 20px;
   padding-bottom: 21px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $black;
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
@@ -31,4 +31,12 @@
     padding-top: 43px;
     padding-bottom: 43px;
   }
+}
+
+.page-header__link:hover path {
+  fill: $red;
+}
+
+.page-header__link:active path {
+  fill: $logo-opacity-color;
 }
