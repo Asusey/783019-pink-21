@@ -1,7 +1,30 @@
 .load {
+  position: relative;
   background-color: $load-background-color;
-  /*background-image: url("../../img/back-mobile.jpg");*/
+  background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: 50% -69px;
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/back-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/back-desktop.jpg");
+  }
+}
+
+.load::before {
+  position: absolute;
+  content: "";
+  top: 107px;
+  left: 0;
+  width: 320px;
+  height: 286px;
+  background-image: url("../../img/phone-hand-mobile.png");
+  background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .load__wrapper {
@@ -9,6 +32,7 @@
   flex-direction: column;
   max-width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     max-width: 620px;
@@ -24,12 +48,15 @@
 
 .load__slogan {
   color: $white;
-  padding-top: 29px;
-  padding-bottom: 348px;
+  padding-top: 20px;
+  padding-bottom: 343px;
+  font-style: normal;
+  font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   margin: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .load__link {
@@ -43,8 +70,8 @@
   width: 274px;
   display: flex;
   justify-content: center;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 16px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     width: 294px;
@@ -55,13 +82,32 @@
   }
 }
 
+.load__link:hover {
+  color: $red;
+  background-color: $white;
+}
+
+.load__link:active {
+  color: $link-opacity-color;
+}
+
 .load__legend {
   color: $white;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  margin: 0;
-  padding-bottom: 38px;
-  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 280px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .load__list {
@@ -69,14 +115,17 @@
   justify-content: space-around;
   list-style: none;
   padding: 0;
-  padding-top: 32px;
-  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 12px;
+  margin: 0 auto;
+  min-width: 239px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     display: flex;
     justify-content: space-around;
     padding-top: 46px;
+    margin: 0;
   }
 }
 

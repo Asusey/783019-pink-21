@@ -1,4 +1,15 @@
+.upload__wrapper {
+  margin: 0 auto;
+}
+
 .upload__intro {
   padding-top: 49px;
   padding-bottom: 52px;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 422px;
+  }
 }

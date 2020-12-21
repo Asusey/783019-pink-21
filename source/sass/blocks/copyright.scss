@@ -1,6 +1,21 @@
 .copyright__link {
+  position: relative;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $black;
+}
+
+.copyright__image {
+  position: absolute;
+  top: -8px;
+  left: 103px;
+}
+
+.copyright__link:hover path {
+  fill: $black;
+}
+
+.copyright__link:active .copyright__image {
+  opacity: 0.3;
 }
