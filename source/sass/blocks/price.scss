@@ -1,15 +1,33 @@
 .price {
   background-color: $secondary-background-color;
+  /*background-image: linear-gradient(176.5deg, white 37.5%, transparent 11%);*/
 
   @media (max-width: $mobile-width-only) {
     overflow: hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
   }
 }
 
 .price__wrapper {
   padding-bottom: 44px;
   margin: 0 auto;
-  margin-top: 82px;
+  margin-top: 56px;
+  background-color: $secondary-background-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 25px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    padding-top: 52px;
+    padding-bottom: 95px;
+  }
 }
 
 .price__list {
@@ -17,47 +35,16 @@
   transform: translateX(-30.5%);
   margin: 0 auto;
   border-collapse: collapse;
-}
 
-.price__field--concealed {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    width: 616px;
+    transform: translateX(2px);
+    margin: 0 auto;
   }
-}
 
-.price__title {
-  background-color: $primary-text-color;
-  padding: 1px 0;
-  width: 276px;
-}
-
-.price__subtitle {
-  color: $white;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin: 0;
-  padding-top: 10px;
-}
-
-.price__title--empty {
-  background-color: $secondary-background-color;
-  width: 153px;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
-}
-
-.price__text {
-  color: $white;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  margin: 0;
-  padding-bottom: 26px;
 }
 
 .price__field {
@@ -71,10 +58,151 @@
   padding-top: 14px;
   padding-left: 20px;
   padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+    padding-top: 7px;
+    padding-left: 11px;
+    padding-bottom: 8px;
+  }
+}
+
+.price__field--concealed {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 13px;
+    padding-left: 19px;
+    padding-bottom: 16px;
+  }
+}
+
+.price__title {
+  position: relative;
+  background-color: $primary-text-color;
+  padding: 1px 0;
+  width: 276px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 154px;
+  }
+}
+
+.price__title--marker::after {
+  position: absolute;
+  content: "Хит";
+  color: $white;
+  text-transform: uppercase;
+  font-weight: normal;
+  width: 120px;
+  height: 23px;
+  background-color: $red;
+  top: 19px;
+  left: -33px;
+  transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    height: 22px;
+    top: 13px;
+    left: -42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 120px;
+    height: 23px;
+    top: 18px;
+    left: -33px;
+  }
+}
+
+.price__title:nth-of-type(1) {
+  border-bottom: 1px solid $table-border-color;
+  border-right: 1px solid $primary-text-color;
+}
+
+.price__title:nth-of-type(2),
+.price__title:nth-of-type(3) {
+  border-right: 2px solid $table-border-color;
+}
+
+.price__title:nth-of-type(4) {
+  border-right: 1px solid $primary-text-color;
+}
+
+.price__subtitle {
+  color: $white;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+}
+
+.price__title--empty {
+  background-color: $secondary-background-color;
+  width: 153px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.price__text {
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    padding-bottom: 21px;
+  }
 }
 
 .price__image {
   position: absolute;
   top: 19px;
-  left: 227px;
+  right: 19px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    right: 103px;
+  }
 }

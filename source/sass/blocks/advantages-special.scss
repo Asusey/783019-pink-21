@@ -1,0 +1,89 @@
+.advantages-special {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $secondary-background-color;
+  }
+}
+
+.advantages-special__wrapper {
+  margin-right: 0;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 96px;
+  padding-bottom: 25px;
+  background-image: url("../../img/timer-tablet.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 54px;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/timer-desktop.svg");
+    background-position: 11px 33px;
+    padding-bottom: 112px;
+    padding-top: 128px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages-special__subtitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 168px;
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+    max-width: 298px;
+    padding-left: 60px;
+    grid-column: 2 / 4;
+  }
+}
+
+.advantages-special__description {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 307px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+    grid-column: 2 / 4;
+    padding-left: 60px;
+    padding-top: 25px;
+  }
+}
+
+.advantages-special__link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $red;
+  grid-column: 2 / 3;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    padding-left: 60px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 20px;
+  }
+}
