@@ -41,6 +41,15 @@
   padding-top: 36px;
   padding-bottom: 20px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 86px;
+  }
 }
 
 .form__item {
@@ -50,6 +59,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding-bottom: 50px;
   }
 }
 
@@ -62,6 +72,10 @@
   cursor: pointer;
   padding-bottom: 6px;
   padding-left: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .form__input {
@@ -107,6 +121,12 @@
 
 //Form-login
 
+.form__item--login:nth-of-type(3) {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
 .form__field--login {
   border: none;
   padding-bottom: 9px;
@@ -118,6 +138,7 @@
   @media (min-width: $desktop-width) {
     min-width: 433px;
     margin: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -125,6 +146,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 20px;
     padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
   }
 }
 
@@ -144,6 +169,14 @@
   left: 0;
   background-color: $white;
   border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -3px;
+  }
 }
 
 .form__checkbox:checked + .form__label-checkbox::after {
@@ -155,6 +188,14 @@
   left: 9px;
   background-image: url("../../img/tick.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 9px;
+  }
 }
 
 .form__label-checkbox {
@@ -164,12 +205,30 @@
   cursor: pointer;
   color: $primary-text-color;
   padding-left: 59px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+  }
 }
 
 .form__list--checkbox {
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 820px;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;*/
   }
 }
 
@@ -184,7 +243,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 44px;
+    padding-left: 0;
   }
 }
 
@@ -197,26 +256,40 @@
 @media (min-width: $desktop-width) {
   .form__item--checkbox:nth-of-type(1) {
     order: 1;
+    /*padding-left: 117px;*/
   }
 
   .form__item--checkbox:nth-of-type(2) {
     order: 4;
+    /*padding-left: 117px;
+    padding-bottom: 60px;*/
+    padding-right: 30px;
   }
 
   .form__item--checkbox:nth-of-type(3) {
     order: 2;
+    /*padding-left: 62px;*/
+    padding-right: 0;
   }
 
   .form__item--checkbox:nth-of-type(4) {
     order: 5;
+    /*padding-left: 62px;
+    padding-bottom: 60px;
+    padding-left: 156px;*/
   }
 
   .form__item--checkbox:nth-of-type(5) {
     order: 3;
+    /*padding-left: 57px;*/
+    padding-right: 7px;
   }
 
   .form__item--checkbox:nth-of-type(6) {
     order: 6;
+    /*padding-left: 57px;
+    padding-bottom: 60px;
+    padding-left: 123px;*/
   }
 }
 
@@ -230,6 +303,7 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
+    margin-top: 58px;
   }
 }
 
@@ -242,6 +316,11 @@
     top: 38px;
     transform: translate(-50%, 0);
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 //Form-contacts
@@ -252,22 +331,53 @@
     border-radius: 1px;
     order: 3;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+  }
 }
 
 .form__list--contacts {
   padding-top: 32px;
   padding-bottom: 26px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    padding-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
 .form__item--contacts {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__item--contacts:nth-of-type(1) {
+    padding-left: 58px;
+  }
+
+  .form__item--contacts:nth-of-type(2) {
+    padding-left: 71px;
   }
 }
 
@@ -275,26 +385,66 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .form__input--contacts {
   display: block;
 
   @media (min-width: $tablet-width) {
-    max-width: 437px;
+    max-width: 476px;
     margin: 0 auto;
-    margin-left: 50px;
+    margin-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 365px;
+    width: 350px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__item--contacts::after {
+    position: absolute;
+    content: "";
+    width: 62px;
+    height: 62px;
+    top: 2px;
+    right: 60px;
+    background-color: $light-gray;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:nth-of-type(1)::after {
+    background-image: url("../../img/phone-icon.svg");
+  }
+
+  &:nth-of-type(2)::after {
+    background-image: url("../../img/mail-icon.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__item--contacts::after {
+    right: 2px;
+    top: 1px;
   }
 }
 
 .form__label--contacts {
   @media (min-width: $tablet-width) {
     padding-left: 77px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
+    padding-left: 18px;
   }
 }
 
@@ -305,7 +455,17 @@
 }
 
 .form__list--radio {
+  padding-top: 47px;
   padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
+    padding-left: 10px;
+  }
 }
 
 .form__radio + .form__label-radio::before {
@@ -318,6 +478,10 @@
   left: 1px;
   background-color: $white;
   border-radius: 50px;
+
+  @media (min-width: $tablet-width) {
+    left: 61px;
+  }
 }
 
 .form__radio:checked + .form__label-radio::after {
@@ -329,6 +493,10 @@
   left: 13px;
   background-color: $red;
   border-radius: 50px;
+
+  @media (min-width: $tablet-width) {
+    left: 73px;
+  }
 }
 
 .form__label-radio {
@@ -338,6 +506,10 @@
   cursor: pointer;
   color: $primary-text-color;
   padding-left: 68px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
 }
 
 .form__item--radio {
@@ -356,18 +528,20 @@
 .form__field--radio {
   @media (max-width: $mobile-width-only) {
     position: relative;
-    padding-top: 79px;
+    padding-top: 67px;
     background-color: $secondary-background-color;
   }
 
   @media (min-width: $tablet-width) {
     order: 2;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 429px;
     margin: 0;
     margin-left: 74px;
+    margin-top: 71px;
   }
 }
 
@@ -400,8 +574,14 @@
   resize: none;
 
   @media (min-width: $tablet-width) {
-    margin: 47px 53px 82px 53px;
+    margin: 21px 60px 52px 60px;
+    padding-bottom: 115px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+    margin-bottom: 41px;
   }
 }
 
@@ -418,6 +598,11 @@
     border: 2px solid $light-gray;
     border-radius: 1px;
     order: 5;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 38px;
   }
 }
 
@@ -425,6 +610,12 @@
   background-color: $white;
   padding-top: 39px;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
 }
 
 //Button
@@ -466,6 +657,8 @@
   @media (min-width: $tablet-width) {
     margin-right: 0;
     margin-left: 0;
+    margin-top: 65px;
+    width: 300px;
   }
 }
 
@@ -482,11 +675,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 31px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     margin: 0;
+    padding-top: 33px;
   }
 }
 
