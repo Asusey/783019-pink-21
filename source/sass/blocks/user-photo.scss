@@ -1,7 +1,15 @@
+.user-photo {
+  display: block;
+}
+
 .user-photo__wrapper {
   @media (max-width: $mobile-width-only) {
     max-width: 280px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
   }
 }
 
@@ -9,19 +17,36 @@
   display: block;
   margin: auto;
   background-color: $load-img-background-color;
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .user-photo__review {
   background-color: $secondary-background-color;
   margin: 0;
   margin-bottom: 20px;
-  padding: 26px 26px 17px;
+  padding: 18px 17px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 155px;
+    min-height: 136px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
   }
 }
 
@@ -31,6 +56,11 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-left: 13px;
+  }
 }
 
 .user-photo__text {
@@ -42,6 +72,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: auto;
+    padding-left: 13px;
   }
 }
 
@@ -54,62 +85,150 @@
 }
 
 .user-photo__like-button {
-  display: block;
+  text-transform: uppercase;
+  font-family: $font-stack;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 11px;
+  padding-bottom: 18px;
+  padding-left: 31px;
   border: none;
   color: $red;
   background-color: $secondary-background-color;
-}
+  background-image: url("../../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 15px;
 
-.user-photo__label {
-  padding-left: 18px;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-position: 240px 5px;
+    padding-top: 0;
+    padding-left: 13px;
+    padding-bottom: 23px;
+  }
 }
 
 //User-photo--pinned
 
 .user-photo--pinned {
+  position: relative;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.user-photo--pinned::after {
+  position: absolute;
+  display: flex;
+  content: "Панорама дня";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  color: $white;
+  width: 140px;
+  height: 36px;
+  background-color: $red;
+  top: 0;
+  right: 20px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 10px;
+  }
 }
 
 .user-photo__review--pinned {
-  max-width: 228px;
+  max-width: 260px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     max-width: 620px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 42px;
+    min-height: 0;
+    padding-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 873px;
+    max-width: 929px;
+    padding-left: 0;
+    padding-bottom: 23px;
   }
 }
 
 .user-photo__image--pinned {
+  width: 100%;
+  height: 137px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
 }
 
 .user-photo__like-button--pinned {
+  padding-left: 39px;
+  padding-bottom: 18px;
+  background-position: 7px 16px;
+
   @media (min-width: $tablet-width) {
     order: 2;
     padding: 0;
-    margin-top: -15px;
+    margin-top: -24px;
     margin-left: auto;
     margin-right: 20px;
+    background-position: 124px 6px;
+    padding-left: 19px;
+    width: 158px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 39px;
+    background-position: 143px 6px;
   }
 }
 
 .user-photo__title--pinned {
+  padding-left: 8px;
+
   @media (min-width: $tablet-width) {
     order: 1;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
   }
 }
 
 .user-photo__text--pinned {
+  padding-left: 8px;
+
   @media (min-width: $tablet-width) {
     order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
   }
 }

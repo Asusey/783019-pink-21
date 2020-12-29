@@ -32,8 +32,8 @@
   padding-top: 14px;
   padding-bottom: 17px;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid $box-shadow-color;
+  border-bottom: 1px solid $black;
 
   @media (min-width: $tablet-width) {
     padding-top: 13px;
