@@ -1,15 +1,28 @@
 .copyright__link {
+  display: block;
   position: relative;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__image {
   position: absolute;
   top: -8px;
   left: 103px;
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 126px;
+  }
 }
 
 .copyright__link:hover path {

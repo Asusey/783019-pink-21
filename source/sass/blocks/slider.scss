@@ -1,6 +1,18 @@
+.slider {
+  position: relative;
+}
+
 .slider__toggles {
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .slider__toggle {
@@ -36,4 +48,50 @@
 
 .slider__toggles--price {
   margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__controls {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.slider__control--prev {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 213px;
+  left: 10px;
+  background-image: url("../../img/left-arrow.svg");
+  background-color: transparent;
+  width: 22px;
+  height: 41px;
+  border: none;
+}
+
+.slider__control--next {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 213px;
+  right: 10px;
+  background-image: url("../../img/left-arrow.svg");
+  background-color: transparent;
+  width: 22px;
+  height: 41px;
+  border: none;
+  transform: rotate(180deg);
 }
