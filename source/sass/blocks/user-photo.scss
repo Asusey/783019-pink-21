@@ -19,6 +19,7 @@
   background-color: $load-img-background-color;
   width: 280px;
   height: 180px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -101,6 +102,7 @@
   background-image: url("../../img/heart.svg");
   background-repeat: no-repeat;
   background-position: 0 15px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 100%;

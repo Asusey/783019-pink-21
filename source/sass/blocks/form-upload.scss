@@ -105,6 +105,7 @@
   height: 100%;
   padding: 0;
   opacity: 0.3;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.5;
@@ -158,6 +159,20 @@
   display: block;
 }
 
+.form-upload__toggle {
+  cursor: pointer;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+}
+
+.form-upload__toggle:active {
+  background: $red;
+}
+
 //Crop
 
 .form-upload__button--crop {
@@ -193,14 +208,8 @@
 }
 
 .form-upload__toggle--crop {
-  position: absolute;
-  width: 12px;
-  height: 12px;
   right: 32px;
   top: -6px;
-  background: #ffffff;
-  border: 2px solid #d22856;
-  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     right: 41px;
@@ -256,14 +265,8 @@
 
 .form-upload__toggle--fill {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 12px;
-    height: 12px;
     left: 24px;
     top: -6px;
-    background: #ffffff;
-    border: 2px solid #d22856;
-    border-radius: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -316,14 +319,8 @@
 
 .form-upload__toggle--contrast {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 12px;
-    height: 12px;
     left: 95px;
     top: -6px;
-    background: #ffffff;
-    border: 2px solid #d22856;
-    border-radius: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -377,6 +374,7 @@
   background-color: $secondary-background-color;
   border-radius: 30px;
   padding-bottom: 16px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 183px;
@@ -390,9 +388,19 @@
   margin: 0 auto;
 }
 
+.form-upload__button--submit:hover {
+  background-color: $red;
+  color: $white;
+}
+
+.form-upload__button--submit:active {
+  color: $logo-opacity-color;
+  background-color: $red;
+}
+
 .form-upload__button--cancel {
-  opacity: 0.1;
-  border: 3px solid $primary-text-color;
+  color: $border-social-color;
+  border: 3px solid $border-social-color;
   padding-top: 15px;
   margin-top: 12px;
 
@@ -404,4 +412,15 @@
     margin-top: 0;
     margin-left: 44px;
   }
+}
+
+.form-upload__button--cancel:hover {
+  border-color: $button-color;
+  color: $button-color;
+}
+
+.form-upload__button--cancel:active {
+  border-color: $button-color;
+  background-color: $button-color;
+  color: $logo-opacity-color;
 }

@@ -78,6 +78,7 @@
   line-height: 24px;
   color: $red;
   grid-column: 2 / 3;
+  text-decoration-line: underline;
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;

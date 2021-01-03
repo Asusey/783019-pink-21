@@ -3,19 +3,21 @@
   flex-direction: column;
   background-color: $primary-text-color;
   color: $white;
+}
 
+.page-header__box {
   @media (min-width: $desktop-width) {
-    background-color: $topmenu-background-color;
-    /*position: relative;*/
-    z-index: 50;
     position: absolute;
+    z-index: 50;
+    background-color: $topmenu-background-color;
+    margin: 0 auto;
     width: 100%;
   }
 }
 
 .page-header__wrapper {
   @media (min-width: $desktop-width) {
-    min-width: 940px;
+    max-width: 940px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

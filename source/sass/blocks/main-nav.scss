@@ -49,6 +49,15 @@
   }
 }
 
+.main-nav__link:hover {
+  color: $red;
+}
+
+.main-nav__link:active {
+  color: $white;
+  opacity: 0.3;
+}
+
 .main-nav__link--active::before {
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -89,7 +98,8 @@
   background-color: $primary-text-color;
 
   @media (min-width: $tablet-width) {
-    top: 33px;
+    top: 45px;
+    right: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,7 +139,8 @@
     background-color: $white;
 
     @media (min-width: $tablet-width) {
-      top: 20px;
+      top: 8px;
+      left: 16px;
     }
   }
 
@@ -140,4 +151,14 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: $red;
+}
+
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  opacity: 0.3;
 }

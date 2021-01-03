@@ -3,6 +3,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -103,9 +104,8 @@
 }
 
 .contacts__link {
-  display: inline;
+  display: block;
   margin: 0 auto;
-  position: relative;
   width: 100%;
   color: $red;
   font-weight: 300;
@@ -118,14 +118,13 @@
   }
 }
 
-.contacts__link:hover::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: $primary-text-color;
-  top: 0;
-  left: 0;  //Не могу понять, как сделать подчеркивание
+.contacts__link:hover {
+  text-decoration-line: underline;
+  color: $primary-text-color;
+}
+
+.contacts__link:active {
+  opacity: 0.3;
 }
 
 //Map

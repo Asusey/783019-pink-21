@@ -1,6 +1,7 @@
 .copyright__link {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -12,23 +13,9 @@
 }
 
 .copyright__image {
-  position: absolute;
-  top: -8px;
-  left: 103px;
-
-  @media (min-width: $tablet-width) {
-    top: -6px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 126px;
-  }
+  padding-left: 16px;
 }
 
 .copyright__link:hover path {
   fill: $black;
-}
-
-.copyright__link:active .copyright__image {
-  opacity: 0.3;
 }

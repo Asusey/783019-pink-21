@@ -69,29 +69,33 @@
   }
 }
 
-.slider__control--prev {
+.slider__control {
   margin: 0;
   padding: 0;
   position: absolute;
   top: 213px;
-  left: 10px;
   background-image: url("../../img/left-arrow.svg");
   background-color: transparent;
   width: 22px;
   height: 41px;
   border: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.slider__control:hover {
+  opacity: 0.3;
+}
+
+.slider__control:active {
+  opacity: 0.1;
+}
+
+.slider__control--prev {
+  left: 10px;
 }
 
 .slider__control--next {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 213px;
   right: 10px;
-  background-image: url("../../img/left-arrow.svg");
-  background-color: transparent;
-  width: 22px;
-  height: 41px;
-  border: none;
   transform: rotate(180deg);
 }
