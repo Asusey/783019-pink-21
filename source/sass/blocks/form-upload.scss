@@ -1,8 +1,5 @@
-.form-upload {
-  background-color: $secondary-background-color;
-}
-
 .form-upload__wrapper {
+  background-color: $secondary-background-color;
   position: relative;
 
   @media (min-width: $tablet-width) {

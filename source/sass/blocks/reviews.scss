@@ -3,6 +3,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(355.3deg, $secondary-background-color 35%, transparent 13%);
+    background-size: cover;
   }
 }
 
@@ -21,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 960px;
+    max-width: 940px;
     margin: 0 auto;
     padding-top: 184px;
     padding-bottom: 310px;

@@ -7,6 +7,10 @@
     background-repeat: no-repeat;
     background-position: 50% 28.5%, 50% -69px;
     background-size: 320px 285px, 100% 462px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phone-hand-mobile@2x.png"), url("../../img/back-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -14,6 +18,11 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 50% bottom, 50% bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phone-hand-tablet@2x.png"), url("../../img/back-tablet@2x.jpg");
+      background-size: 100%, 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
