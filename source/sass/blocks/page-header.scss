@@ -34,12 +34,12 @@
   border-bottom: 1px solid $black;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 26px;
     padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 43px;
+    padding-top: 27px;
     padding-bottom: 43px;
     padding-left: 0;
     border-bottom: none;
@@ -52,4 +52,29 @@
 
 .page-header__link:active path {
   fill: $logo-opacity-color;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__logo--tablet,
+  .page-header__logo--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo--mobile,
+  .page-header__logo--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo--mobile,
+  .page-header__logo--tablet {
+    display: none;
+  }
+
+  .page-header__logo--desktop {
+    display: block;
+  }
 }
