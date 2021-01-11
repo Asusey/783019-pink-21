@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
 
   @media (max-width: $mobile-width-only) {
-    background-image: url("../../img/iphone-screen-mobile.png"),
+    background-image: url("../img/iphone-screen-mobile.png"),
       linear-gradient(174.5deg, white 24%, transparent 11%);
     background-repeat: no-repeat;
     background-position: 50% 106.3%;
@@ -12,7 +12,7 @@
     overflow: hidden;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/iphone-screen-mobile@2x.png"),
+      background-image: url("../img/iphone-screen-mobile@2x.png"),
         linear-gradient(174.5deg, white 24%, transparent 11%);
       background-repeat: no-repeat;
       background-size: 157px auto, auto;
@@ -20,12 +20,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/iphone-screen-tablet.png"),
+    background-image: url("../img/iphone-screen-tablet.png"),
       linear-gradient(175.5deg, white 37.5%, transparent 11%);
     background-position: 5% 137.3%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/iphone-screen-tablet@2x.png"),
+      background-image: url("../img/iphone-screen-tablet@2x.png"),
         linear-gradient(175.5deg, white 37.5%, transparent 11%);
       background-size: 268px auto, auto;
     }
@@ -51,16 +51,16 @@
     max-width: 960px;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: url("../../img/iphone-screen-gray-desktop.png"),
-      url("../../img/iphone-screen-pink-desktop.png"),
-      url("../../img/iphone-screen-smile-desktop.png");
+    background-image: url("../img/iphone-screen-gray-desktop.png"),
+      url("../img/iphone-screen-pink-desktop.png"),
+      url("../img/iphone-screen-smile-desktop.png");
     background-repeat: no-repeat;
     background-position: 6px 323px, 326px 323px, 646px 323px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/iphone-screen-gray-desktop@2x.png"),
-        url("../../img/iphone-screen-pink-desktop@2x.png"),
-        url("../../img/iphone-screen-smile-desktop@2x.png");
+      background-image: url("../img/iphone-screen-gray-desktop@2x.png"),
+        url("../img/iphone-screen-pink-desktop@2x.png"),
+        url("../img/iphone-screen-smile-desktop@2x.png");
       background-size: 308px auto;
     }
   }
