@@ -46,13 +46,20 @@
   }
 }
 
-.page-header__link:hover path {
+//Состояния наведения для лого хедера
+.page-header__link svg {
+  fill: $white;
+}
+
+.page-header__link:hover svg {
   fill: $red;
 }
 
-.page-header__link:active path {
+.page-header__link:active svg {
   fill: $logo-opacity-color;
 }
+
+//
 
 @media (max-width: $mobile-width-only) {
   .page-header__logo--tablet,

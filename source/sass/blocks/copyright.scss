@@ -1,6 +1,5 @@
 .copyright__link {
   display: flex;
-  justify-content: baseline;
   align-items: center;
   font-weight: normal;
   font-size: 14px;
@@ -16,6 +15,14 @@
   padding-left: 16px;
 }
 
-.copyright__link:hover path {
-  fill: $black;
+.copyright__link svg {
+  fill: $red;
+}
+
+.copyright__link:hover svg {
+  fill: $primary-text-color;
+}
+
+.copyright__link:active svg {
+  opacity: 0.3;
 }

@@ -121,7 +121,7 @@
   opacity: 1;
 }
 
-.form-upload__button--active path {
+.form-upload__button--active svg {
   fill: $red;
 }
 
@@ -160,14 +160,18 @@
   cursor: pointer;
   position: absolute;
   width: 12px;
-  height: 12px;
-  background: #ffffff;
-  border: 2px solid #d22856;
+  height: 16px;
+  background: $white;
+  border: 2px solid $red;
   border-radius: 50%;
 }
 
 .form-upload__toggle:active {
   background: $red;
+}
+
+.form-upload__toggle:focus {
+  outline: 2px solid $primary-text-color;
 }
 
 //Crop
@@ -228,6 +232,7 @@
 
 .form-upload__button--fill svg {
   @media (min-width: $tablet-width) {
+    fill: $red;
     width: 24px;
     height: 22px;
   }
@@ -235,12 +240,6 @@
   @media (min-width: $desktop-width) {
     width: 48px;
     height: 43px;
-  }
-}
-
-.form-upload__button--fill path {
-  @media (min-width: $tablet-width) {
-    fill: $red;
   }
 }
 
@@ -282,6 +281,7 @@
 
 .form-upload__button--contrast svg {
   @media (min-width: $tablet-width) {
+    fill: $red;
     width: 16px;
     height: 16px;
   }
@@ -289,12 +289,6 @@
   @media (min-width: $desktop-width) {
     width: 32px;
     height: 32px;
-  }
-}
-
-.form-upload__button--contrast path {
-  @media (min-width: $tablet-width) {
-    fill: $red;
   }
 }
 
@@ -378,24 +372,24 @@
   }
 }
 
-.form-upload__button--submit {
+.form-upload__button-post--submit {
   color: $red;
   border: 3px solid $red;
   padding-top: 16px;
   margin: 0 auto;
 }
 
-.form-upload__button--submit:hover {
+.form-upload__button-post--submit:hover {
   background-color: $red;
   color: $white;
 }
 
-.form-upload__button--submit:active {
+.form-upload__button-post--submit:active {
   color: $logo-opacity-color;
   background-color: $red;
 }
 
-.form-upload__button--cancel {
+.form-upload__button-post--cancel {
   color: $border-social-color;
   border: 3px solid $border-social-color;
   padding-top: 15px;
@@ -411,12 +405,12 @@
   }
 }
 
-.form-upload__button--cancel:hover {
+.form-upload__button-post--cancel:hover {
   border-color: $button-color;
   color: $button-color;
 }
 
-.form-upload__button--cancel:active {
+.form-upload__button-post--cancel:active {
   border-color: $button-color;
   background-color: $button-color;
   color: $logo-opacity-color;

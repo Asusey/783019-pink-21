@@ -320,7 +320,7 @@
   }
 }
 
-.form__legent--checkbox {
+.form__legend--checkbox {
   @media (max-width: $mobile-width-only) {
     display: block;
     position: absolute;
@@ -338,7 +338,7 @@
 
 //Form-contacts
 
-.form__fild--contacts {
+.form__field--contacts {
   @media (min-width: $tablet-width) {
     border: 2px solid $light-gray;
     border-radius: 1px;
@@ -571,7 +571,7 @@
   }
 }
 
-.form__legent--radio {
+.form__legend--radio {
   @media (max-width: $mobile-width-only) {
     display: block;
     position: absolute;

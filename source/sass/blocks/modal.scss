@@ -1,31 +1,129 @@
 .modal {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  text-align: center;
+  background-color: $white;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
 }
 
 .modal__title {
   font-weight: bold;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 49px;
+    max-width: 205px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 397px;
+  }
 }
 
 .modal__text {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
+  max-width: 266px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 313px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 378px;
+    margin-bottom: 66px;
+  }
 }
 
 .modal__button {
+  font-family: inherit;
   color: $white;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  width: 100%;
   text-transform: uppercase;
   background-color: $green;
   border: 2px solid $green;
   border-radius: 1px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  margin-top: 40px;
-  margin-bottom: 54px;
+  width: 276px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-top: 82px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 67%;
+    margin-top: 62px;
+  }
+}
+
+.modal-error {
+  display: none;
+  height: 289px;
+
+  @media (min-width: $tablet-width) {
+    height: 363px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient($white 61%, $secondary-background-color 26%);
+  }
+}
+
+.modal__title--error {
+  @media (min-width: $tablet-width) {
+    max-width: 216px;
+  }
+}
+
+.modal__text--error {
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 301px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 352px;
+    margin-bottom: 33px;
+  }
+}
+
+.modal__button--error {
+  margin-top: 28px;
+}
+
+.modal-success {
+  display: none;
+  height: 392px;
+  background: linear-gradient($white 61%, $secondary-background-color 26%);
+
+  @media (min-width: $tablet-width) {
+    height: 432px;
+  }
 }
