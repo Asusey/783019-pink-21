@@ -3,6 +3,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -103,9 +104,8 @@
 }
 
 .contacts__link {
-  display: inline;
+  display: block;
   margin: 0 auto;
-  position: relative;
   width: 100%;
   color: $red;
   font-weight: 300;
@@ -118,14 +118,13 @@
   }
 }
 
-.contacts__link:hover::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: $primary-text-color;
-  top: 0;
-  left: 0;  //Не могу понять, как сделать подчеркивание
+.contacts__link:hover {
+  text-decoration-line: underline;
+  color: $primary-text-color;
+}
+
+.contacts__link:active {
+  opacity: 0.3;
 }
 
 //Map
@@ -133,11 +132,6 @@
 .contacts__map-box {
   position: relative;
   margin: 0 auto;
-
-  @media (min-width: $desktop-width) {
-    margin-top: 8px;
-    margin-bottom: 36px;
-  }
 }
 
 .contacts__map-box::before {
@@ -145,7 +139,7 @@
   width: 100%;
   height: 123px;
   content: "";
-  background-image: url("../../img/triangle-white-footer.svg");
+  background-image: url("../img/triangle-white-footer.svg");
   top: -45px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -155,13 +149,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/triangl-white-footer-desktop.svg");
+    background-image: url("../img/triangl-white-footer-desktop.svg");
     top: -21px;
   }
 }
 
 .contacts__map {
   border: none;
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 482px;
+  }
+}
+
+.contacts__map-static {
+  position: absolute;
+  z-index: -1;
+  left: 0;
   width: 100%;
   height: 200px;
 

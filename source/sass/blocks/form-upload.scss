@@ -1,8 +1,5 @@
-.form-upload {
-  background-color: $secondary-background-color;
-}
-
 .form-upload__wrapper {
+  background-color: $secondary-background-color;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -105,6 +102,7 @@
   height: 100%;
   padding: 0;
   opacity: 0.3;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.5;
@@ -123,7 +121,7 @@
   opacity: 1;
 }
 
-.form-upload__button--active path {
+.form-upload__button--active svg {
   fill: $red;
 }
 
@@ -156,6 +154,24 @@
 
 .form-upload__roller--active {
   display: block;
+}
+
+.form-upload__toggle {
+  cursor: pointer;
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  background: $white;
+  border: 2px solid $red;
+  border-radius: 50%;
+}
+
+.form-upload__toggle:active {
+  background: $red;
+}
+
+.form-upload__toggle:focus {
+  outline: 2px solid $primary-text-color;
 }
 
 //Crop
@@ -193,14 +209,8 @@
 }
 
 .form-upload__toggle--crop {
-  position: absolute;
-  width: 12px;
-  height: 12px;
   right: 32px;
   top: -6px;
-  background: #ffffff;
-  border: 2px solid #d22856;
-  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     right: 41px;
@@ -222,6 +232,7 @@
 
 .form-upload__button--fill svg {
   @media (min-width: $tablet-width) {
+    fill: $red;
     width: 24px;
     height: 22px;
   }
@@ -229,12 +240,6 @@
   @media (min-width: $desktop-width) {
     width: 48px;
     height: 43px;
-  }
-}
-
-.form-upload__button--fill path {
-  @media (min-width: $tablet-width) {
-    fill: $red;
   }
 }
 
@@ -256,14 +261,8 @@
 
 .form-upload__toggle--fill {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 12px;
-    height: 12px;
     left: 24px;
     top: -6px;
-    background: #ffffff;
-    border: 2px solid #d22856;
-    border-radius: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -282,6 +281,7 @@
 
 .form-upload__button--contrast svg {
   @media (min-width: $tablet-width) {
+    fill: $red;
     width: 16px;
     height: 16px;
   }
@@ -289,12 +289,6 @@
   @media (min-width: $desktop-width) {
     width: 32px;
     height: 32px;
-  }
-}
-
-.form-upload__button--contrast path {
-  @media (min-width: $tablet-width) {
-    fill: $red;
   }
 }
 
@@ -316,14 +310,8 @@
 
 .form-upload__toggle--contrast {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 12px;
-    height: 12px;
     left: 95px;
     top: -6px;
-    background: #ffffff;
-    border: 2px solid #d22856;
-    border-radius: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -377,22 +365,33 @@
   background-color: $secondary-background-color;
   border-radius: 30px;
   padding-bottom: 16px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 183px;
   }
 }
 
-.form-upload__button--submit {
+.form-upload__button-post--submit {
   color: $red;
   border: 3px solid $red;
   padding-top: 16px;
   margin: 0 auto;
 }
 
-.form-upload__button--cancel {
-  opacity: 0.1;
-  border: 3px solid $primary-text-color;
+.form-upload__button-post--submit:hover {
+  background-color: $red;
+  color: $white;
+}
+
+.form-upload__button-post--submit:active {
+  color: $logo-opacity-color;
+  background-color: $red;
+}
+
+.form-upload__button-post--cancel {
+  color: $border-social-color;
+  border: 3px solid $border-social-color;
   padding-top: 15px;
   margin-top: 12px;
 
@@ -404,4 +403,15 @@
     margin-top: 0;
     margin-left: 44px;
   }
+}
+
+.form-upload__button-post--cancel:hover {
+  border-color: $button-color;
+  color: $button-color;
+}
+
+.form-upload__button-post--cancel:active {
+  border-color: $button-color;
+  background-color: $button-color;
+  color: $logo-opacity-color;
 }

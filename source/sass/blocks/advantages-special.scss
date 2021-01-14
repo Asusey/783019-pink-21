@@ -13,14 +13,14 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 96px;
   padding-bottom: 25px;
-  background-image: url("../../img/timer-tablet.svg");
+  background-image: url("../img/timer-tablet.svg");
   background-repeat: no-repeat;
   background-position: 20px 54px;
   margin: 0 auto;
   max-width: 960px;
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/timer-desktop.svg");
+    background-image: url("../img/timer-desktop.svg");
     background-position: 11px 33px;
     padding-bottom: 112px;
     padding-top: 128px;
@@ -78,6 +78,7 @@
   line-height: 24px;
   color: $red;
   grid-column: 2 / 3;
+  text-decoration-line: underline;
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;

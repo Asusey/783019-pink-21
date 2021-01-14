@@ -20,13 +20,13 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     padding-top: 25px;
-    padding-bottom: 67px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    padding-top: 52px;
-    padding-bottom: 95px;
+    margin-top: -120px;
+    padding-top: 0;
+    padding-bottom: 96px;
   }
 }
 
@@ -34,7 +34,7 @@
   width: 828px;
   transform: translateX(-30.5%);
   margin: 0 auto;
-  border-collapse: collapse;
+  border-spacing: 0;
 
   @media (min-width: $tablet-width) {
     width: 616px;
@@ -53,7 +53,7 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  border: 2px solid $table-border-color;
+  border: 1px solid $table-border-color;
   border-top: none;
   padding-top: 14px;
   padding-left: 20px;
@@ -73,6 +73,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    border-left: 2px solid $table-border-color;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
@@ -85,6 +86,27 @@
     padding-left: 19px;
     padding-bottom: 16px;
   }
+}
+
+.price__item:nth-of-type(2) .price__field--yes {
+  border-top: 2px solid $primary-text-color;
+}
+
+.price__item:nth-of-type(3) .price__field {
+  border-top: 1px solid $table-border-color;
+}
+
+.price__item:nth-of-type(4) .price__field {
+  border-top: 1px solid $table-border-color;
+}
+
+.price__field:last-of-type {
+  border-right: 2px solid $table-border-color;
+}
+
+.price__field--concealed-top {
+  border-top: 2px solid $table-border-color;
+  border-top-left-radius: 3px;
 }
 
 .price__title {
@@ -130,18 +152,20 @@
   }
 }
 
-.price__title:nth-of-type(1) {
-  border-bottom: 1px solid $table-border-color;
-  border-right: 1px solid $primary-text-color;
-}
-
 .price__title:nth-of-type(2),
 .price__title:nth-of-type(3) {
-  border-right: 2px solid $table-border-color;
+  border-right: 1px solid $table-border-color;
+  border-left: 1px solid $table-border-color;
+}
+
+.price__title:nth-of-type(2) {
+  border-top-left-radius: 3px;
 }
 
 .price__title:nth-of-type(4) {
-  border-right: 1px solid $primary-text-color;
+  border-right: 2px solid $primary-text-color;
+  border-top-right-radius: 3px;
+  border-left: 1px solid $table-border-color;
 }
 
 .price__subtitle {
@@ -161,7 +185,7 @@
 
 .price__title--empty {
   background-color: $secondary-background-color;
-  width: 153px;
+  width: 152px;
 
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -182,12 +206,12 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 7px;
+    padding-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
-    padding-bottom: 21px;
+    padding-bottom: 19px;
   }
 }
 
@@ -205,4 +229,20 @@
     top: 17px;
     right: 103px;
   }
+}
+
+.price__item:last-of-type .price__field {
+  border-bottom: 2px solid $table-border-color;
+}
+
+.price__item:last-child .price__field--yes {
+  border-bottom-right-radius: 3px;
+}
+
+.price__field--concealed:last-child {
+  border-bottom-left-radius: 3px;
+}
+
+.price__field--concealed-bottom {
+  border-bottom-left-radius: 3px;
 }
