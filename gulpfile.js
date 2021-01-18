@@ -146,7 +146,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
+
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
@@ -163,6 +163,6 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, html, scripts, sprite, copy, createWebp),
+  gulp.parallel(styles, html, sprite, copy, createWebp),
   gulp.series(server, watcher)
 );

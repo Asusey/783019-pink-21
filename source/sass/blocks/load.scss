@@ -3,36 +3,36 @@
   background-color: $load-background-color;
 
   @media (max-width: $mobile-width-only) {
-    background-image: url("../img/phone-hand-mobile.png"), url("../img/back-mobile.jpg");
+    background-image: url("../img/phone-hand-mobile.webp"), url("../img/back-mobile.webp");
     background-repeat: no-repeat;
     background-position: 50% 28.5%, 50% -69px;
     background-size: 320px 285px, 100% 462px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/phone-hand-mobile@2x.png"), url("../img/back-mobile@2x.jpg");
+      background-image: url("../img/phone-hand-mobile@2x.webp"), url("../img/back-mobile@2x.webp");
     }
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/phone-hand-tablet.png"), url("../img/back-tablet.jpg");
+    background-image: url("../img/phone-hand-tablet.webp"), url("../img/back-tablet.webp");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 50% bottom, 50% bottom;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/phone-hand-tablet@2x.png"), url("../img/back-tablet@2x.jpg");
+      background-image: url("../img/phone-hand-tablet@2x.webp"), url("../img/back-tablet@2x.webp");
       background-size: 660px 545px, cover;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.webp");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 50% bottom;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
+      background-image: url("../img/back-desktop@2x.webp");
       background-size: 2560px 853px;
     }
   }
@@ -57,13 +57,13 @@
     align-items: flex-start;
     padding: 0 10px;
     padding-bottom: 108px;
-    background-image: url("../img/phone-hand-desktop.png");
+    background-image: url("../img/phone-hand-desktop.webp");
     background-size: 1050px 645px;
     background-repeat: no-repeat;
     background-position: 26px bottom;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/phone-hand-desktop@2x.png");
+      background-image: url("../img/phone-hand-desktop@2x.webp");
       background-size: 1050px 645px;
     }
   }
