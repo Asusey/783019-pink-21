@@ -85,3 +85,9 @@
     display: block;
   }
 }
+
+.page-header--closed {
+  @media (max-width: $mobile-width-only) {
+    background-color: $topmenu-background-color;
+  }
+}
