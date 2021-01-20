@@ -1,10 +1,11 @@
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
   border-radius: 5px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   text-align: center;
@@ -82,12 +83,12 @@
   }
 }
 
-.modal-error {
+.modal--error {
   display: none;
-  height: 289px;
+  min-height: 289px;
 
   @media (min-width: $tablet-width) {
-    height: 363px;
+    min-height: 363px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,12 +119,12 @@
   margin-top: 28px;
 }
 
-.modal-success {
+.modal--success {
   display: none;
-  height: 392px;
+  min-height: 392px;
   background: linear-gradient($white 61%, $secondary-background-color 26%);
 
   @media (min-width: $tablet-width) {
-    height: 432px;
+    min-height: 432px;
   }
 }
