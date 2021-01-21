@@ -5,6 +5,9 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./css/style.min.css" rel="stylesheet" />
+    <link rel="preload" type="font/woff2" href="./fonts/opensans.woff2" as="font" crossorigin>
+    <link rel="preload" type="font/woff2" href="./fonts/opensansbold.woff2" as="font" crossorigin>
+    <link rel="preload" type="font/woff2" href="./fonts/opensanslight.woff2" as="font" crossorigin>
     <link
       type="image/png"
       sizes="16x16"
@@ -780,6 +783,7 @@
                         <button
                           class="form-upload__toggle form-upload__toggle--crop"
                           type="button"
+                          aria-label="Кадрирование"
                         ></button>
                       </div>
                     </div>
@@ -789,7 +793,7 @@
                     <button
                       class="form-upload__button form-upload__button--fill"
                       type="button"
-                      aria-label="Заливка"
+                      aria-label="Залить"
                     >
                       <svg width="48" height="43">
                         <use xlink:href="#fill"></use>
@@ -801,6 +805,7 @@
                         <button
                           class="form-upload__toggle form-upload__toggle--fill"
                           type="button"
+                          aria-label="Заливка"
                         ></button>
                       </div>
                     </div>
@@ -824,6 +829,7 @@
                         <button
                           class="form-upload__toggle form-upload__toggle--contrast"
                           type="button"
+                          aria-label="Контраст"
                         ></button>
                       </div>
                     </div>

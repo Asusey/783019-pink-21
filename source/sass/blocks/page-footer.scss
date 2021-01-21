@@ -10,14 +10,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: start;
-    padding-bottom: 0;
-    margin-bottom: 13px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 940px;
     padding: 0 10px;
     padding-bottom: 49px;
+    padding-top: 35px;
   }
 }
 
@@ -121,6 +121,11 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 13px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 49px;
+  }
 }
 
 .page-footer__wrapper--catalog {
@@ -128,10 +133,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 8px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 73px;
-    padding-bottom: 36px;
+    padding-bottom: 49px;
+    margin-bottom: 0;
   }
 }

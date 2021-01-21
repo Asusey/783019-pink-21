@@ -51,18 +51,6 @@
     max-width: 960px;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: url("../img/iphone-screen-gray-desktop.webp"),
-      url("../img/iphone-screen-pink-desktop.webp"),
-      url("../img/iphone-screen-smile-desktop.webp");
-    background-repeat: no-repeat;
-    background-position: 6px 323px, 326px 323px, 646px 323px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/iphone-screen-gray-desktop@2x.webp"),
-        url("../img/iphone-screen-pink-desktop@2x.webp"),
-        url("../img/iphone-screen-smile-desktop@2x.webp");
-      background-size: 308px auto;
-    }
   }
 }
 
@@ -96,7 +84,62 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     max-width: 248px;
+  }
+}
+
+.advantages__item--mood::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    bottom: 293px;
+    left: -31px;
+    background-image: url("../img/iphone-screen-gray-desktop.webp");
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-gray-desktop@2x.webp");
+      background-size: 308px 301px;
+    }
+  }
+}
+
+.advantages__item--world::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    bottom: 293px;
+    left: -31px;
+    background-image: url("../img/iphone-screen-pink-desktop.webp");
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-pink-desktop@2x.webp");
+      background-size: 308px 301px;
+    }
+  }
+}
+
+.advantages__item--friends::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    bottom: 293px;
+    left: -29px;
+    background-image: url("../img/iphone-screen-smile-desktop.webp");
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-smile-desktop@2x.webp");
+      background-size: 308px 301px;
+    }
   }
 }
 
